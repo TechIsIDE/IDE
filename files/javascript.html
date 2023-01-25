@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../lib/css/editor-styles.css"> -->
+    <link href="../data/img/techis-logo (1).png" rel="icon" type="image/x-icon" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="../editor-style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header">
+        <div class="logo-heading">
+            <a href="../index.html" title="home">
+                <img src="../img/techis-logo.png" id =techis-logo alt="">
+            </a>
+            <h1 id="tech-heading">TECH I.S.</h1>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Select your language here</button>
+          <div class="dropdown-content">
+            <a href="./Python.html">Python</a>
+            <a href="./html_css.html">HTML & CSS</a>
+            <a href="./javascript.html">JavaScript</a>
+          </div>
+        </div>
+    </section>
+      </header>
+    <div class="editor">
+        <div class="editor__wrapper">
+            <div class="editor__body">
+                <div id="editorCode" class="editor__code"></div>
+            </div>
+            <div class="editor__footer">
+                <div class="editor__footer--left">
+                    <button class="editor__btn editor__run">Run</button>
+                    <button class="editor__btn editor__reset">Reset</button>
+                </div>
+                <div class="editor__footer--right">
+                    <div class="editor__console">
+                        <ul class="editor__console-logs"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/ace-editor/src-min/ace.js"></script>  
+    <script src="./js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="./js/ace-editor/src-min/ext-language_tools.js"></script>
+    <script src="./js/editor.js"></script>
+    <script src="./js/editor-console.js"></script>
+
+    <script src="../js/ace-editor/src-min/ace.js"></script>
+    <script src="../js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="../js/ace-editor/src-min/ext-language_tools.js"></script>
+    <script src="../js/editor.js"></script>
+    <script src="../js/editor-console.js"></script>
+</body>
+
+</html>

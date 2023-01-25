@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <link href="../data/img/techis-logo (1).png" rel="icon" type="image/x-icon" />
+    <script src="../data/js/ace-builds/src-noconflict/ace.js"></script>
+    <script src="../data/js/ace-builds/src-noconflict/ext-language_tools.js" type="text/javascript"></script>
+    <script src="../data/js/skulpt/skulpt.js" type="text/javascript"></script>
+    <script src="../data/js/skulpt/skulpt-stdlib.js" type="text/javascript"></script>
+    <link href="../data/css/style.css" rel="stylesheet">
+    <link href="../data/fonts/fontawesome-free-6.1.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../data/fonts/fontawesome-free-6.1.1-web/css/solid.min.css" rel="stylesheet">
+    <link href="../data/fonts/fontawesome-free-6.1.1-web/css/brands.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home.css">
+  <!-- <header style="display: flex;">
+    <img style="height: 50px; margin-left: 1vw;padding-right: 5vw; " src="../img/techis-logo.png" alt="">
+    <link rel="stylesheet" href="../editor-style.css">
+    <div class="dropdown">
+      <button class="dropbtn">Select your language here</button>
+      <div class="dropdown-content">
+        <a href="./Python.html">Python</a>
+        <a href="./html_css.html">HTML & CSS</a>
+        <a href="./javascript.html">JavaScript</a>
+      </div>
+    </div>
+  </header> -->
+  <title>HTML || CSS Compiler</title>
+
+  <script>
+    function compileHTML(field, e) {
+      document.getElementById('output').innerHTML = field.value;
+    }
+
+    function compileCSS(field, e) {
+      document.getElementById('styling').innerHTML = field.value;
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <section class="header">
+    <div class="logo-heading">
+        <a href="../index.html" title="home">
+            <img src="../img/techis-logo.png" id =techis-logo alt="">
+        </a>
+        <h1 id="tech-heading">TECH I.S.</h1>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Select your language here</button>
+      <div class="dropdown-content">
+        <a href="./Python.html">Python</a>
+        <a href="./html_css.html">HTML & CSS</a>
+        <a href="./javascript.html">JavaScript</a>
+      </div>
+    </div>
+</section>
+  </header>
+
+  <style id="styling"></style>
+
+  <div class="html_input">
+    <textarea 
+     placeholder="Write HTML code here.." onkeyup="compileHTML(this)"
+      class="htmlarea"></textarea>
+    <textarea 
+     placeholder="Write CSS code here.." onkeyup="compileCSS(this)"
+      class="cssarea"></textarea>
+  </div>
+
+  <div id="output">
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+
